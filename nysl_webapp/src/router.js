@@ -24,6 +24,11 @@ export default new Router({
       component: Home
     },
     {
+      path: "/home",
+      redirect: "/",
+      name: "home-redirect"
+    },
+    {
       path: "/schedule",
       name: "schedule",
       component: Schedule
