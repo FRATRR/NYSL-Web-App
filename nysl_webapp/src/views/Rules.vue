@@ -1,11 +1,11 @@
 
 <template>
-  <div class="rules_body">
+  <div class="body">
     <v-expansion-panel focusable>
       <v-expansion-panel-content>
         <div slot="header">Sportmanship</div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
             The common interest that members of the Association share is to inspire youth to practice the ideals of sportsmanship and fair play. Any player, coach, team, parent, spectator, administrator or referee whose behavior detracts from this purpose is subject to disciplinary action regardless of technical soccer background, expertise, accomplishments or standing.
           </v-card-text>
         </v-card>
@@ -13,7 +13,7 @@
       <v-expansion-panel-content>
         <div slot="header">Fifa Field Regulations</div>
         <v-card>
-          <v-card-text class="grey lighten-3">DIMENSIONS. FIFA Law 1 provides for flexible external field dimensions within a given maximum and minimum width and length. These dimensions should be adhered to for all fields used by teams under 12 and older.
+          <v-card-text class="txt_rules">DIMENSIONS. FIFA Law 1 provides for flexible external field dimensions within a given maximum and minimum width and length. These dimensions should be adhered to for all fields used by teams under 12 and older.
 
             COMPETITION FIELDS. Fields used within the competition program must be a minimum of 100 x 60 yards. Leagues, districts or associations participating in the state competition program that are unable to provide a field that meets these minimum requirements must advise the State Competition Board which will assign its Fields Committee to inspect the field and recommend to the Board whether or not a waiver of the minimum dimensions should be granted. Teams from leagues, districts or associations that are unable to provide an acceptable field may be required to play all their games away.
 
@@ -43,7 +43,7 @@
       <v-expansion-panel-content>
         <div slot="header">Equipment</div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             We will abide by and accept equipment standards as defined by FIFA, USSF and USYSA.
           </v-card-text>
@@ -51,10 +51,10 @@
       </v-expansion-panel-content>
 
       <v-expansion-panel-content>
-        <div slot="header">Number of plaeyrs
+        <div slot="header">Number of players
         </div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             TEAM SIZE. Except as noted below, team rosters shall consist of not less than eleven nor more than eighteen players. A team must have at least seven (7) players present and able to play before referees are permitted to start a sanctioned game. No more than eleven (11) players per team may be on the field at any one time during the game.
 
@@ -67,7 +67,7 @@
       <v-expansion-panel-content>
         <div slot="header">Substitutions</div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             Teams may make an unlimited number of substitutions at the times indicated below. A player who has been replaced may re-enter the game as a substitute at a later time.
 
@@ -91,7 +91,7 @@
         <div slot="header">Confiscated Player Passes
         </div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             Passes of any individual(s) ejected from any match shall be retained after the match by the referee. The pass of any individual who has received a third caution (yellow card) during a playing year shall be confiscated by the referee at the conclusion of the match in which the third caution was received. That player will be suspended from playing in the next game in which the offending participant would otherwise be eligible to participate. This process will continue so that for every third yellow card received during a playing year, the player will be suspended from playing in the next game (after the receipt of a third yellow card) for which the offending participate would otherwise be eligible to participate. The referee shall deliver all confiscated passes to the UYSA State Office within forty-eight (48) hours of the conclusion of the match.
 
@@ -102,7 +102,7 @@
       <v-expansion-panel-content>
         <div slot="header">All-Play</div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             All-play means that every recreation player on every team shall play at least fifty percent of each game. Coaches in the competition program are encouraged to play their players 50% of each game.
 
@@ -116,7 +116,7 @@
         <div slot="header">Player's Equipment
         </div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             Where the uniform colors of both teams are so similar that the referee orders a change, the designated home team must change to colors distinct from those of the opponent.
 
@@ -127,7 +127,7 @@
       <v-expansion-panel-content>
         <div slot="header">Mixed Teams</div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             GIRLS PLAYING ON BOY'S TEAM. Girls are eligible to play on boys’teams with parent/guardian permission.
 
@@ -141,7 +141,7 @@
         <div slot="header">Game Termination
         </div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             Any game terminated after 15 minutes into the second half by the referee by reason of the elements, or by reason of grave disorder on the part of the coaches, players or spectators of a team that is losing at the point that the game is terminated, shall stand as a completed game. If a team is ahead and the game is called because of their actions they will lose the game 1-0.
 
@@ -153,7 +153,7 @@
         <div slot="header">Condition of Replay of Games
         </div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             Any game which is required to be replayed as a result of any protest or appeal, shall be subject to the following conditions:
 
@@ -170,7 +170,7 @@
       <v-expansion-panel-content>
         <div slot="header">Rerefee Responsabilities</div>
         <v-card>
-          <v-card-text class="grey lighten-3">
+          <v-card-text class="txt_rules">
 
             The referee shall verify the identity of the players and coaches with his/her player pass. He shall collect the passes of those players and coaches who are to participate in the game. The referee must allow no player into the game for whom he/she has no pass.
 
@@ -189,11 +189,24 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
 
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Teko");
+.body {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.txt_rules {
+  background-color: #d9d9d6;
+  color: #033949;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+div {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
 </style>
 

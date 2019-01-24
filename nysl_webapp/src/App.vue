@@ -1,110 +1,113 @@
 <template>
 
   <v-app style="background-color: #D9D9D6;">
+    <div>
+      <v-toolbar
+        flat
+        fixed
+      >
 
-    <template>
-
-      <v-layout row>
-        <v-flex>
-          <v-container>
-            <v-layout>
-              <v-btn
-                dark
-                icon
-                @click.stop="drawer = !drawer"
-              >
-                <v-icon color="#033949">menu</v-icon>
-              </v-btn>
-            </v-layout>
-          </v-container>
-
-          <v-navigation-drawer
-            v-model="drawer"
-            absolute
-            temporary
-          >
-            <v-layout
-              align-center
-              justify-center
-              class="logo_drawer"
-            >
-              <img src="./assets/nysl_logo.png">
-            </v-layout>
-            <v-list-tile
-              v-for="item in items"
-              :key="item.title"
-              :to='item.path'
-            >
-              <v-layout
-                align-center
-                justify-center
-              >
-                <v-list-tile-action>
-                  <v-icon>{{ item.icon }}</v-icon>
-                </v-list-tile-action>
-
-                <v-list-tile-content>
-                  <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-                </v-list-tile-content>
+        <v-layout row>
+          <v-flex>
+            <v-container>
+              <v-layout>
+                <v-btn
+                  dark
+                  icon
+                  @click.stop="drawer = !drawer"
+                >
+                  <v-icon color="#033949">menu</v-icon>
+                </v-btn>
               </v-layout>
+            </v-container>
 
-            </v-list-tile>
+          </v-flex>
 
-          </v-navigation-drawer>
-        </v-flex>
+          <div class="nysl_title">
 
-        <div class="nysl_title">
+            <h1>Northside Youth Soccer League</h1>
 
-          <h1>Northside Youth Soccer League</h1>
-
-        </div>
-      </v-layout>
-    </template>
-    <router-view />
-    </v-content>
-
-    <v-bottom-nav
-      :active.sync="activeBtn"
-      :value="showNav"
-      fixed
-      color="#033949;"
-    >
-
-      <v-btn
-        flat
-        color=#5a59d8
-        to="/"
+          </div>
+        </v-layout>
+      </v-toolbar>
+      <v-navigation-drawer
+        v-model="drawer"
+        temporary
+        fixed
       >
-        <span>Home</span>
-        <v-icon color=#002661>home</v-icon>
-      </v-btn>
+        <v-layout
+          align-center
+          justify-center
+          class="logo_drawer"
+        >
+          <img src="./assets/nysl_logo.png">
+        </v-layout>
+        <v-list-tile
+          v-for="item in items"
+          :key="item.title"
+          :to='item.path'
+        >
+          <v-layout
+            align-center
+            justify-center
+          >
+            <v-list-tile-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-tile-action>
 
-      <v-btn
-        flat
-        color=#5a59d8
-        to="/schedule"
-      >
-        <span>Schedule</span>
-        <v-icon color=#002661>calendar_today</v-icon>
-      </v-btn>
+            <v-list-tile-content>
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-layout>
 
-      <v-btn
-        flat
-        color=#5a59d8
-        to="/statistics"
+        </v-list-tile>
+
+      </v-navigation-drawer>
+      <router-view />
+      </v-content>
+
+      <v-bottom-nav
+        :active.sync="activeBtn"
+        :value="showNav"
+        fixed
+        color="#033949;"
       >
-        <span>Stats</span>
-        <v-icon color=#002661>insert_chart</v-icon>
-      </v-btn>
-      <v-btn
-        flat
-        color=#5a59d8
-        to="/profile"
-      >
-        <span>Profile</span>
-        <v-icon color=#002661>account_box</v-icon>
-      </v-btn>
-    </v-bottom-nav>
+
+        <v-btn
+          flat
+          color=#5a59d8
+          to="/"
+        >
+          <span>Home</span>
+          <v-icon color=#3C539A>home</v-icon>
+        </v-btn>
+
+        <v-btn
+          flat
+          color=#3C539A
+          to="/schedule"
+        >
+          <span>Schedule</span>
+          <v-icon color=#3C539A>calendar_today</v-icon>
+        </v-btn>
+
+        <v-btn
+          flat
+          color=#5a59d8
+          to="/statistics"
+        >
+          <span>Stats</span>
+          <v-icon color=#3C539A>insert_chart</v-icon>
+        </v-btn>
+        <v-btn
+          flat
+          color=#5a59d8
+          to="/profile"
+        >
+          <span>Forum</span>
+          <v-icon color=#3C539A>chat</v-icon>
+        </v-btn>
+      </v-bottom-nav>
     </div>
 
   </v-app>
@@ -136,15 +139,15 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Teko");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
+
+span{
+  font-family: "Montserrat", sans-serif;
+
+}
 .nysl_title {
   color: #033949 ;
-  text-align: center;
-}
-.nysl_title h1{
   align-self: center;
-  font-family: "Teko", sans-serif;
-  font-size: 25px;
-
+   font-family: "Teko", sans-serif;
 }
 .logo_drawer{
 margin: 2%;

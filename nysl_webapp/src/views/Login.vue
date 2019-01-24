@@ -1,12 +1,24 @@
 <template>
-  <div>
+  <div class="body">
     <v-layout justify-center>
-      <v-card
-        v-on:click="login"
-        class="loginstyle"
-      >
-        <h2>Please log in </h2>
-      </v-card>
+      <iframe
+        src="https://giphy.com/embed/nFYH2rO8d7gxG"
+        width="50%"
+        height="50%"
+        frameBorder="0"
+        class="gif"
+      ></iframe>
+    </v-layout>
+
+    <v-layout justify-center>
+      <v-flex xs12>
+        <v-card
+          v-on:click="login"
+          class="loginstyle"
+        >
+          <h2>Please Login To Post</h2>
+        </v-card>
+      </v-flex>
     </v-layout>
   </div>
 </template>
@@ -49,7 +61,13 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=Teko");
+.body {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .loginstyle {
+  font-family: "Teko", sans-serif;
   margin: 3%;
   padding: 3%;
   background-color: #0abcf9;

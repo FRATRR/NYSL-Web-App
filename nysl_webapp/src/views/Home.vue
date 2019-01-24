@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div class="body">
 
     <v-layout
       class="vcard_title"
@@ -10,7 +10,7 @@
     <v-card
       v-for="result in currentResults"
       :key="result.id"
-      :to="`/result/${result.id}`"
+      :to="`/result/${result.home_team}-${result.away_team}`"
       class="results_vcard"
     >
       <div>
@@ -40,7 +40,7 @@
         </div>
       </div>
     </v-card>
-  </v-container>
+  </div>
 </template>
 
 
@@ -70,7 +70,10 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Teko");
-
+.body {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .result_display {
   background-color: #ecf0f1;
   color: #033949;
@@ -101,6 +104,8 @@ export default {
 
 .vcard_title {
   font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: #033949;
 }
 .vs_txt {
   align-self: center;

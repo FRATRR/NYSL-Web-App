@@ -370,7 +370,7 @@ export default new Vuex.Store({
         location_url: "https://goo.gl/maps/t4L1g2EXeZp",
         jersey: "YOU DID IT",
         mp: "",
-        wins: "",
+        wins: 0,
         draws: "",
         losses: "",
         pts: ""
@@ -383,7 +383,7 @@ export default new Vuex.Store({
         location_url: "https://goo.gl/maps/fCLXMfnZZWE2",
         jersey: "",
         mp: "",
-        wins: "",
+        wins: 0,
         draws: "",
         losses: "",
         pts: ""
@@ -396,7 +396,7 @@ export default new Vuex.Store({
         location_url: "https://goo.gl/maps/AV2fYn3xqSG2",
         jersey: "",
         mp: "",
-        wins: "",
+        wins: 0,
         draws: "",
         losses: "",
         pts: ""
@@ -409,7 +409,7 @@ export default new Vuex.Store({
         location_url: "https://goo.gl/maps/75Cv8YhSbUr",
         jersey: "",
         mp: "",
-        wins: "",
+        wins: 0,
         draws: "",
         losses: "",
         pts: ""
@@ -422,7 +422,7 @@ export default new Vuex.Store({
         location_url: "https://goo.gl/maps/6S6S58ky9vD2",
         jersey: "",
         mp: "",
-        wins: "",
+        wins: 0,
         draws: "",
         losses: "",
         pts: ""
@@ -435,7 +435,7 @@ export default new Vuex.Store({
         location_url: "https://goo.gl/maps/kmPf8BPVHDN2",
         jersey: "",
         mp: "",
-        wins: "",
+        wins: 0,
         draws: "",
         losses: "",
         pts: ""
@@ -451,84 +451,6 @@ export default new Vuex.Store({
         },
         {
           name: "Mike",
-          lastname: "Jasik",
-          number: "8",
-          position: "Defender"
-        },
-        {
-          name: "Stephan",
-          lastname: "Marques",
-          number: "15",
-          position: "Goal Keeper"
-        },
-        {
-          name: "Rico",
-          lastname: "Evanoff",
-          number: "32",
-          position: "Midfielder"
-        }
-      ],
-      Hawks: [
-        {
-          name: "hfsdkj",
-          lastname: "Bey",
-          number: "23",
-          position: "Forward"
-        },
-        {
-          name: "kjfsdhfjksd",
-          lastname: "Jasik",
-          number: "8",
-          position: "Defender"
-        },
-        {
-          name: "Stephan",
-          lastname: "Marques",
-          number: "15",
-          position: "Goal Keeper"
-        },
-        {
-          name: "Rico",
-          lastname: "Evanoff",
-          number: "32",
-          position: "Midfielder"
-        }
-      ],
-      Mustangs: [
-        {
-          name: "hfsdkj",
-          lastname: "Bey",
-          number: "23",
-          position: "Forward"
-        },
-        {
-          name: "kjfsdhfjksd",
-          lastname: "Jasik",
-          number: "8",
-          position: "Defender"
-        },
-        {
-          name: "Stephan",
-          lastname: "Marques",
-          number: "15",
-          position: "Goal Keeper"
-        },
-        {
-          name: "Rico",
-          lastname: "Evanoff",
-          number: "32",
-          position: "Midfielder"
-        }
-      ],
-      Owls: [
-        {
-          name: "hfsdkj",
-          lastname: "Bey",
-          number: "23",
-          position: "Forward"
-        },
-        {
-          name: "kjfsdhfjksd",
           lastname: "Jasik",
           number: "8",
           position: "Defender"

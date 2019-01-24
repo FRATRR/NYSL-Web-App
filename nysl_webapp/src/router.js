@@ -51,11 +51,6 @@ export default new Router({
       component: About
     },
     {
-      path: "/club",
-      name: "club",
-      component: ClubPage
-    },
-    {
       path: "/club/:name",
       name: "clubpage",
       component: ClubPage,
@@ -87,5 +82,8 @@ export default new Router({
       name: "login",
       component: Login
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 };
+  }
 });

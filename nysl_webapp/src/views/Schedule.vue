@@ -1,6 +1,6 @@
 <template>
 
-  <v-container>
+  <div class="body">
 
     <v-layout
       class="vcard_title"
@@ -11,7 +11,7 @@
     <v-card
       v-for="match in currentMatch"
       :key="match.id"
-      :to="`/match/${match.id}`"
+      :to="`/match/${match.home_team}-${match.away_team}`"
       class="matches_vcard"
     >
       <div>
@@ -44,7 +44,7 @@
       </div>
     </v-card>
 
-  </v-container>
+  </div>
 </template>
 
 
@@ -74,7 +74,10 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Teko");
-
+.body {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .matches_vcard {
   margin: 3%;
   padding: 3%;
@@ -95,6 +98,8 @@ export default {
 
 .vcard_title {
   font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: #033949;
 }
 .vs_txt {
   align-self: center;
